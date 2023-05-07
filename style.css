@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo {
+    width: 500px;
+}
+
+header {
+    background-color: beige;
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.code {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+
+}
+
+.navcode {
+    align-items: center;
+    display: flex;
+}
+
+.code_item a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.code_item.active a {
+    text-decoration: underline;
+}
+
+.imgMain {
+    background-image: url(./img/cuales-son-los-lenguajes-de-programación.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+
+.imgMain h2 {
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-inline: 10px;
+    border-radius: 10px;
+}
+
+.imgMain p {
+    color: white;
+    text-align: center;
+}
+
+.cursos {
+    padding: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.curso {
+    background-color:beige;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.curso_imagen {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.curso h3 {
+    text-align: center;
+}
+
+.footer {
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+    text-align: center;
+}
