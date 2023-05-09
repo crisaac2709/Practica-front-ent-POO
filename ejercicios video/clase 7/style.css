@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "logo   logo   tabla       partidos"
+    "logo   logo   goleadores  asistidores"
+    ;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: aquamarine;
+    background-image: url(https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/Sport/article-preview-epl-hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.tabla {
+    grid-area: tabla;
+    background-color: rgb(192, 192, 9);
+    background-image: url(https://e0.365dm.com/23/03/2048x1152/skysports-epremier-league-finals_6099000.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.goleadores {
+    grid-area: goleadores;
+    background-color: red;
+    background-image: url(https://cms.optussport.tv/resources/static/f6f34c8d-dbed-423c-a6d8-04eddf111e4b_ospl-no-text-smaller.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.partidos {
+    grid-area: partidos;
+    background-color: purple;
+    background-image: url(https://cdn.futbolperuano.com/sdi/2022/08/04/pronosticos-de-la-premier-league-asi-se-jugara-la-primera-fecha-del-futbol-ingles-1054337.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+
+.asistidores {
+    grid-area: asistidores;
+    background-color: bisque;
+    background-image: url(https://premierleaguebrasil.com.br/wp-content/uploads/2022/08/equipes-premier-league-e1660051071900.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.contenedor > div {
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 768px) { 
+
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "logo       logo"
+        "tabla      partidos"
+        "goleadores asistidores"
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .contenedor {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor > * {
+        flex: 1;
+    }
+    
+    .logo {
+        flex: 1.5;
+    }
+}

@@ -1,0 +1,1 @@
+Aqui aplique lo viste en la clase 12 (pseudoclases y pseudoelementos) y 15 (palabras claves y descripciones)
