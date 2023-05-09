@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background-color: beige;
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+
+.logo {
+    width: 500px;
+    
+}
+
+.code {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+
+}
+
+.navcode {
+    align-items: center;
+    display: flex;
+}
+
+.code_item a{
+    text-decoration: none;
+    background-color: gray;
+    border: 2px solid black ;
+    color: beige;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.code_item a:hover {
+    background-color: beige;
+    border: 2px solid black ;
+    color: black;
+    transition: background 1s, color 2s;
+
+}
+
+
+.code_item.active a{
+    text-decoration: none;
+}
+
+.cajaMain {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "caja1  caja2"
+    "caja1  caja2"
+    ;
+}
+
+
+.caja1 {
+    grid-area: caja1;
+    background-image: url(https://www.educaciontrespuntocero.com/wp-content/uploads/2017/06/lenguajes-programacion-978x652.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.titulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.place1 {
+    margin-left: 15%;
+    border:solid 5px black ;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.place2 {
+    margin-top: 40px;
+    margin-left: 15%;
+    border:solid 5px black ;
+    width: 600px;
+    height: 170px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.of1 {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.title {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto,
+.correo {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.texto {
+    padding: 10px;
+}
+
+.opciones {
+    display: flex;
+}
+
+.opcion {
+    list-style-type: none;
+    margin-top: 20px ;
+}
+
+.opcion1 {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    
+}
+
+.opcion2 {
+    position:absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items:center;
+
+}
+
+.red {
+    width: 60px;
+    height: 50px;
+}
+
+
+.texto-link, 
+.texto {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.footer {
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+    text-align: center;
+}
+
+.caja1:hover,
+.caja2:hover {
+    transform: scale(1.0) translateY(-5px);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(190, 145, 21, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+
+
+/*** animista ***/
+
+.caja1 {
+    animation:tilt-in-top-1 .6s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 1s;
+}
+
+.caja2{
+    animation:tilt-in-top-1 .6s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 1.5s;
+}
+
+
+ @keyframes tilt-in-top-1{0%{transform:rotateY(30deg) translateY(-300px) skewY(-30deg);opacity:0}100%{transform:rotateY(0deg) translateY(0) skewY(0deg);opacity:1}}
+
